@@ -1,0 +1,112 @@
+body{
+    background-color: black;
+}
+/*Setting styles for desktop devices. */
+#container{
+    display: flex;
+    width: 1178px;
+    height: 588px;
+
+  
+}
+/*Setting styles for division one to four. */
+#one{
+    position: absolute;
+    width: 239;
+    left:0px;
+    height: 588px;
+    
+}
+#two{
+    position: absolute;
+    width: 239px;
+    left:239px;
+    height: 588px;
+}
+#three{
+    position: absolute;
+    width: 239px;   
+    left: 478px;  
+    height: 588px;
+}#four{
+    position: absolute;
+    width: 239px;
+    left: 717px;
+    height: 588px;
+}
+/*Setting styles for images and on hover effects. */
+img{
+    max-width: 239px;
+    height: 588px;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+
+img:hover{
+  filter: blur(5px);
+  opacity: 0.5;
+}
+   
+/*Setting positions of the texts on images. */
+.one,.two,.three,.four{
+    color: aliceblue;
+    position: absolute;
+    top: 350px;
+    height: 150px;
+}
+.more{
+   color: aqua;
+}
+#one:hover p,#two:hover p,#three:hover p, #four:hover p{
+    display: block;
+ }
+ /*Setting styles for mobile devices starts here. */
+ @media screen and (max-width: 600px) {
+    #one:hover p,#two:hover p,#three:hover p,#four:hover p{
+        display: none;}
+    /*Hidding text on mobile screens display is done here. */
+        h1,p,span{
+        display: none;
+    }
+    #container{
+        display: flex;
+        position: fixed;
+        width: 400px;
+        height: 600px;
+      
+    }
+    #one{
+        position: absolute;
+        width: 98.5px;
+        left:0px;
+    }
+    #two{
+        position: absolute;
+        width: 98.5px;
+        left:98.5px;
+    }
+    #three{
+        position: absolute;
+        width: 98.5px;   
+        left: 197px;  
+    }#four{
+        position: absolute;
+        width: 98.5px;
+        left: 295.5px;
+    }
+    /*Setting sizes for images and on hover effects for mobile screens. */
+    img{
+        max-width: 98.5px;
+        height: 600px;
+        
+        transition: all 0.3s;
+    }
+    img:hover{
+      filter: blur(5px);
+      opacity: 0.5;
+      
+    }
+    .more:hover{
+        display: none;;
+    }
+ }
